@@ -21,5 +21,13 @@ module Classifier
       end
       n_grams
     end
+
+    def ngrams_for_categorisation
+      ngrams = {}
+      (1..4).each do |n|
+        ngrams.merge!(ngrams(n))
+      end
+      ngrams
+    end
   end
 end
