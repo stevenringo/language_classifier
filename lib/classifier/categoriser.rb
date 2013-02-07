@@ -1,3 +1,8 @@
+require_relative "sanitiser"
+require_relative "ngram_extractor"
+require_relative "profiler"
+require_relative "scorer"
+
 module Classifier
   class Categoriser
     def initialize(document)

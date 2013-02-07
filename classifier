@@ -1,9 +1,5 @@
 #!/usr/bin/env ruby
 require_relative "lib/classifier/categoriser"
-require_relative "lib/classifier/sanitiser"
-require_relative "lib/classifier/ngram_extractor"
-require_relative "lib/classifier/profiler"
-require_relative "lib/classifier/scorer"
 
 document = File.read(ARGV[0])
 detected_language = Classifier::Categoriser.new(document).determine_language
